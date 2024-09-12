@@ -7,6 +7,7 @@ import nigiri6 from "./assets/nigiri-squid.jpg"
 
 export const menu = () => {
     const content = document.querySelector('#content');
+    const body = document.querySelector('body');
     const container = document.createElement('div');
     const title = document.createElement('div');
     const section1 = document.createElement('section');
@@ -66,7 +67,7 @@ export const menu = () => {
     img6.src = nigiri6;
     
     title.textContent = 'Menu';
-    
+
     foodTitle1.textContent = 'Nigiri Sake';
     foodTitle2.textContent = 'Nigiri Ebi';
     foodTitle3.textContent = 'Nigiri Unagi';
@@ -88,6 +89,7 @@ export const menu = () => {
     foodSub5.textContent = 'rice, vinegar, raw shrimp, wasabi';
     foodSub6.textContent = 'rice, vinegar, raw squid';
 
+    body.style.height = '100%';
     menuText1.appendChild(foodTitle1);
     menuText1.appendChild(foodSub1);
     menuText1.appendChild(foodPrice1);

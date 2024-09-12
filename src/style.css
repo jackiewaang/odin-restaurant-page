@@ -20,7 +20,7 @@ body{
     font-family:'Roboto';
     display:grid;
     grid-template-rows:auto 1fr auto;
-    height:100vh;
+    height:100%;
     background-image:url('./assets/background-img.jpg');
     background-size:cover;
     background-position:center;
@@ -156,7 +156,6 @@ footer p, footer a{
     background-color:#9CEAEF;
     display:grid;
     grid-template-columns:1fr 1fr;
-    /* width:80%; */
     border-radius:8px;
     box-shadow:var(--shadow);
     margin:30px 40px;
@@ -164,7 +163,7 @@ footer p, footer a{
 }
 
 .menu-container section{
-    padding:20px 20px;
+    padding:20px;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -199,4 +198,45 @@ section img{
     gap:10px;
     text-align:center;
     flex-grow:1;
+}
+
+/* About */
+
+.about-container{
+    background-color:#9CEAEF;
+    border-radius:8px;
+    box-shadow:var(--shadow);
+    margin:30px 200px;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.about-container section{
+    background-color:#C4FFF9;
+    padding:20px;
+    border-radius:8px;
+    margin:20px;
+    box-shadow:var(--shadow);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container section h1{
+    font-size:2rem;
+}
+
+.about-container section p{
+    line-height:2;
+    text-align: center;
+}
+
+.about-container .about-title{
+    font-size:4rem;
+    text-align:center;
+    font-weight:600;
+    padding:10px;
 }

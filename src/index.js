@@ -6,7 +6,7 @@ import {about} from "./about.js";
 
 const initialLoader = (() => {
     const content = document.querySelector("#content");
-    home();
+    about();
     return{content}
 })();
 

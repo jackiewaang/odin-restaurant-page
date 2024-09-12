@@ -4,6 +4,7 @@ export const home = () => {
     const title = document.createElement('h1');
     const subtitle = document.createElement('p');
     const reservation = document.createElement('button');
+    const body = document.querySelector('body');
 
     subtitle.classList.add("sub-title");
     title.classList.add("title");
@@ -15,6 +16,7 @@ export const home = () => {
     content.classList.add("home");
     content.classList.remove("menu");
     content.classList.remove("about");
+    body.style.height = '100vh';
 
     hero.appendChild(title);
     hero.appendChild(subtitle);
